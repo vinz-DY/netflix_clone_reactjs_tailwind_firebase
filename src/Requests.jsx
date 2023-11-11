@@ -1,11 +1,11 @@
-const key = 'a7f0ae9c9fe6317c620edef8bcd082cf';
+const key = `7bb5d2080020cd6c424c89bf79fab80b`;
 
 const requests = {
-  requestsPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}language=en-US&page=1`,
-  requestsTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}language=en-US&page=1`,
-  requestsTrending: `https://api.themoviedb.org/3/movie/popular?api_key=${key}language=en-US&page=2`,
-  requestsHorror: `https://api.themoviedb.org/3/search/movieapi_key=${key}query=horror&include_adult=false&language=en-US&page=1`,
-  requestUpcoming:`https://api.themoviedb.org/3/movie/upcoming?api_key${key}language=en-US&page=1`,
+  requestsPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
+  requestsTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`,
+  requestsTrending: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=2`,
+  requestsHorror: `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=horror&page=1&include_adult=false`,
+  requestUpcoming: `https://api.themoviedb.org/3/movie/upcoming?api_key=${key}&language=en-US&page=1`,
 };
 
 

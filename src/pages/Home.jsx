@@ -1,8 +1,11 @@
 import React from 'react'
+import MainNet from '../components/MainNet'
 
 const Home = () => {
   return (
-    <div>Home</div>
+      <>
+          <MainNet/>
+    </>
   )
 }
 
