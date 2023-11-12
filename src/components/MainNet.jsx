@@ -27,9 +27,9 @@ const MainNet = () => {
   }
 
   return (
-    <section className="w-full h-[550px] text-white">
+    <section className="w-full h-[550px] xl:h-[650px] text-white transition-all duration-300 ease-in-out">
       <div className="w-full h-full">
-        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
+        <div className="absolute w-full h-[550px] xl:h-[650px] bg-gradient-to-r from-black transition-all duration-300 ease-in-out"></div>
         {movie && (
           <img
             onLoad={handleImageLoad}
@@ -51,8 +51,13 @@ const MainNet = () => {
                 Watch Later
               </button>
             </div>
-            <p className="text-gray-400 text-sm" >Released: {movie?.release_date}</p>
-            <p className="w-full md:max-w-[70%] lg:max-w-[50%]: xl:max-w-[35%] text-gray-200:" > {truncateString(movie?.overview, 150)} </p>
+            <p className="text-gray-400 text-sm">
+              Released: {movie?.release_date}
+            </p>
+            <p className="w-full md:max-w-[70%] lg:max-w-[50%]: xl:max-w-[35%] text-gray-200:">
+              {" "}
+              {truncateString(movie?.overview, 150)}{" "}
+            </p>
           </div>
         )}
       </div>
