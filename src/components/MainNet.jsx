@@ -21,7 +21,7 @@ const MainNet = () => {
   return (
     <section className="w-full h-[550px] text-white">
       <div className="w-full h-full">
-        <div className="absolute w-[500px] h-[550px] bg-gradient-to-r from-black"></div>
+        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
         {movie && (
           <img
             onLoad={handleImageLoad}
@@ -32,6 +32,17 @@ const MainNet = () => {
             alt={movie.title}
           />
         )}
+        <div className="absolute w-full top-[20%] p-4 md:p-8">
+          <h1>{ movie?.title}</h1>
+          <div>
+            <button className="border bg-gray-300 text-black border-gray-300 py-2 px-5">
+              Play
+            </button>
+            <button className="border text-white border-gray-300 py-2 px-5 ml-4">
+              Watch Later
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );
